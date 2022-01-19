@@ -2,6 +2,26 @@
 # yarn lockfile v1
 
 
+"@types/inquirer@^8.1.3":
+  version "8.1.3"
+  resolved "https://registry.npmmirror.com/@types/inquirer/download/@types/inquirer-8.1.3.tgz#dfda4c97cdbe304e4dceb378a80f79448ea5c8fe"
+  integrity sha512-AayK4ZL5ssPzR1OtnOLGAwpT0Dda3Xi/h1G0l1oJDNrowp7T1423q4Zb8/emr7tzRlCy4ssEri0LWVexAqHyKQ==
+  dependencies:
+    "@types/through" "*"
+    rxjs "^7.2.0"
+
+"@types/node@*":
+  version "17.0.9"
+  resolved "https://registry.npmmirror.com/@types/node/download/@types/node-17.0.9.tgz#0b7f161afb5b1cc12518d29b2cdc7175d5490628"
+  integrity sha512-5dNBXu/FOER+EXnyah7rn8xlNrfMOQb/qXnw4NQgLkCygKBKhdmF/CA5oXVOKZLBEahw8s2WP9LxIcN/oDDRgQ==
+
+"@types/through@*":
+  version "0.0.30"
+  resolved "https://registry.npmmirror.com/@types/through/download/@types/through-0.0.30.tgz#e0e42ce77e897bd6aead6f6ea62aeb135b8a3895"
+  integrity sha1-4OQs536Je9aurW9upirrE1uKOJU=
+  dependencies:
+    "@types/node" "*"
+
 ansi-escapes@^4.2.1:
   version "4.3.2"
   resolved "https://packages.aliyun.com/6128d2e757e7cd986dfae5ab/npm/npm-registry/ansi-escapes/-/ansi-escapes-4.3.2.tgz#6b2291d1db7d98b6521d5f1efa42d0f3a9feb65e"
