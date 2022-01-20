@@ -1,6 +1,11 @@
 import * as inquirer from 'inquirer';
+interface Option {
+    value: number | string | boolean;
+    text: string;
+    [key: string]: any;
+}
 
-async function select(content: string, options: Array<{ [key: string]: any }>) {
+async function select(content: string, options: Array<Option>) {
     const val = await ask('list', content || '请选择', {
         choices: options?.map((item) => item.text),
         askAnswered: true
@@ -8,7 +13,7 @@ async function select(content: string, options: Array<{ [key: string]: any }>) {
     const item = options.find((item) => item.text === val);
     return item?.value;
 }
-async function checkbox(content: string, options: Array<{ [key: string]: any }>) {
+async function checkbox(content: string, options: Array<Option>) {
     const val: Array<any> = await ask('checkbox', content || '请选择', {
         choices: options?.map((item) => item.text),
         askAnswered: true
@@ -20,7 +25,7 @@ async function checkbox(content: string, options: Array<{ [key: string]: any }>)
 }
 async function input(content: string) {
     const val = await ask('input', content || '请输入');
-    return (val || '').trim();
+    return val?.trim();
 }
 async function confirm(content: string) {
     const val = await ask('confirm', content || '请选择');
