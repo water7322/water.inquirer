@@ -8,8 +8,16 @@
     "dev": "tsc --watch",
     "prepublish": "tsc"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/water7322/water.inquirer.git"
+  },
   "author": "water768",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/water7322/water.inquirer/issues"
+  },
+  "homepage": "https://github.com/water7322/water.inquirer#readme",
   "dependencies": {},
   "devDependencies": {
     "@types/inquirer": "^8.1.3",
