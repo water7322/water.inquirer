@@ -35,4 +35,4 @@ async function ask(type: string, content: string, param?: object) {
     const result = await inquirer.prompt([{type: type, name: 'water', message: content, ...param}]);
     return result.water;
 }
-export {select, checkbox, input, confirm, ask};
+export default {select, checkbox, input, confirm, ask};
